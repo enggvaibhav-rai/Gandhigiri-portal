@@ -1,0 +1,123 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styling */
+.navbar {
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Main content and sidebar flex ratios */
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.main-content .content{
+    margin-bottom: 1.5rem;
+}
+
+.main-content .content h1{
+    margin-bottom: 0.5rem;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #e1e1e1;
+}
+
+.sidebar img{
+    width: 30rem;
+}
+
+.sidebar .register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(87, 176, 87);
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+.last-year{
+    margin: 1rem;
+}
+
+.last-year .heading h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.boxes .box{
+    width: 25%;
+    background-color: rgba(226, 226, 226, 0.704);
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 1rem;
+}
+
+.boxes .box h1{
+    text-align: center;
+}
+
+.boxes .box img{
+    width: 80%;
+    margin: 10%;
+}
+
+.boxes .box .winner-content{
+    margin: 10%;
+    margin-top: 0;
+}
+
+footer{
+    height: 5rem;
+    background-color: navy;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
